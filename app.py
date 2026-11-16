@@ -22,6 +22,7 @@ app = Flask(__name__, static_folder=str(PUBLIC_DIR), static_url_path="")
 
 
 def get_db():
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     connection = sqlite3.connect(DB_PATH)
     connection.row_factory = sqlite3.Row
     connection.execute("PRAGMA foreign_keys = ON")

@@ -27,3 +27,5 @@ In Render, create a **Web Service** from this project and use:
 - Environment variable: `MEDIMART_DB_PATH=/opt/render/project/src/data/medimart.db`
 
 The SQLite database is created at `MEDIMART_DB_PATH` on the persistent disk. If that variable is not set, it is created beside the selected config file. The included `render.yaml` documents the service and disk setup.
+
+The app creates the database directory automatically at startup. If Render still reports `unable to open database file`, verify that the persistent disk is mounted at `/opt/render/project/src/data` and that `MEDIMART_DB_PATH` uses that exact path.
