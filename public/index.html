@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Pharmacy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span>
+      <span id="brand-name" data-brand-name></span>
+    </a>
+    <span id="tagline" class="tagline" data-tagline></span>
+    <nav class="site-nav" aria-label="Main navigation"><a class="active" href="/">Shop</a><a href="/health.html">Health Hub</a><a href="/about.html">About & Support</a></nav>
+    <div class="header-actions">
+      <label class="search-wrap"><span class="sr-only">Search products</span><input id="search" type="search" placeholder="Search medicines"></label>
+      <button id="cart-button" class="cart-button" type="button">Cart <span id="cart-count" class="count-badge">0</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">Everyday care, made simple</p><h1>Your trusted online pharmacy</h1><p>Quality health essentials delivered to your door.</p></div></section>
+    <section class="shop-section">
+      <div class="section-heading"><div><h2>Shop products</h2><p id="product-count" class="muted"></p></div><label>Category <select id="category-filter"><option value="">All categories</option></select></label></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <aside id="cart-panel" class="side-panel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="panel-head"><h2>Your cart</h2><button class="icon-button" data-close="cart-panel" aria-label="Close cart">×</button></div>
+    <div id="cart-items"></div><div class="cart-summary"><div><span>Subtotal</span><strong id="cart-subtotal">KSh 0</strong></div><button id="checkout-button" class="primary-button" type="button">Checkout</button></div>
+  </aside>
+  <div id="checkout-modal" class="modal" aria-hidden="true"><div class="modal-card">
+    <div class="panel-head"><h2>Checkout</h2><button class="icon-button" data-close="checkout-modal" aria-label="Close checkout">×</button></div>
+    <div class="progress"><div id="progress-bar"></div></div><div id="step-labels" class="step-labels"></div><div id="checkout-content"></div>
+  </div></div>
+  <div id="confirmation" class="modal" aria-hidden="true"><div class="modal-card confirmation-card"><div class="success-icon">✓</div><h2 id="confirmation-title"></h2><p id="confirmation-text"></p><button class="primary-button" data-close="confirmation">Continue shopping</button></div></div>
+  <script src="/site.js"></script><script src="/app.js"></script>
+</body>
+</html>

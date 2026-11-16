@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <header class="site-header admin-header"><a class="brand" href="/"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span><span id="admin-brand"></span></a><span id="admin-title" class="tagline"></span></header>
+  <main class="admin-main"><div id="admin-login" class="admin-login card"><h1 id="login-title"></h1><p class="muted">Enter the admin password from config.json.</p><form id="login-form"><input id="admin-key" type="password" placeholder="Admin password" required><button class="primary-button">Sign in</button></form><p id="login-error" class="error"></p></div>
+  <div id="admin-app" hidden><div class="admin-toolbar"><h1>Dashboard</h1><button id="refresh-admin" class="secondary-button">Refresh</button></div><section class="card"><div class="section-heading"><h2>Stock</h2><button id="show-product-form" class="primary-button">Add product</button></div><div id="product-form-wrap" hidden><form id="product-form" class="admin-form"><input name="name" placeholder="Product name" required><input name="category" placeholder="Category" required><input name="price" type="number" min="0" placeholder="Price (KSh)" required><input name="stock" type="number" min="0" placeholder="Stock" required><input name="emoji" placeholder="Emoji" value="💊" required><label><input name="requires_rx" type="checkbox"> Prescription required</label><button class="primary-button">Save product</button></form></div><div class="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th></th></tr></thead><tbody id="stock-table"></tbody></table></div></section>
+  <section class="card"><h2>Orders</h2><div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th></tr></thead><tbody id="orders-table"></tbody></table></div></section>
+  <section class="card"><h2>Stock history</h2><div class="table-wrap"><table><thead><tr><th>Product</th><th>Change</th><th>Reason</th><th>Date</th></tr></thead><tbody id="log-table"></tbody></table></div></section></div></main>
+  <div id="admin-toast" class="toast" role="status"></div><script src="/admin.js"></script>
+</body>
+</html>

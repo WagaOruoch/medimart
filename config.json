@@ -1,0 +1,31 @@
+{
+  "name": "MediMart",
+  "tagline": "Your health, delivered.",
+  "primary": "#0A7E8C",
+  "currency": "KES",
+  "currency_symbol": "KSh",
+  "delivery_fee": 1500,
+  "admin_password": "admin123",
+  "products": [
+    {"name": "Paracetamol 500mg", "category": "Pain Relief", "price": 800, "stock": 30, "requires_rx": false, "emoji": "💊"},
+    {"name": "Ibuprofen 400mg", "category": "Pain Relief", "price": 1200, "stock": 4, "requires_rx": false, "emoji": "💊"},
+    {"name": "Diclofenac Gel", "category": "Pain Relief", "price": 2500, "stock": 15, "requires_rx": false, "emoji": "🧴"},
+    {"name": "Cough Relief Syrup", "category": "Cold & Flu", "price": 1800, "stock": 20, "requires_rx": false, "emoji": "🍯"},
+    {"name": "FluGuard Tablets", "category": "Cold & Flu", "price": 1500, "stock": 12, "requires_rx": false, "emoji": "💊"},
+    {"name": "Saline Nasal Spray", "category": "Cold & Flu", "price": 2200, "stock": 9, "requires_rx": false, "emoji": "🌊"},
+    {"name": "Vitamin C 1000mg", "category": "Vitamins", "price": 3500, "stock": 18, "requires_rx": false, "emoji": "🍊"},
+    {"name": "Daily Multivitamins", "category": "Vitamins", "price": 4500, "stock": 10, "requires_rx": false, "emoji": "🌈"},
+    {"name": "Iron Plus Capsules", "category": "Vitamins", "price": 3000, "stock": 7, "requires_rx": false, "emoji": "🔴"},
+    {"name": "Baby Wipes", "category": "Baby Care", "price": 2800, "stock": 25, "requires_rx": false, "emoji": "🧻"},
+    {"name": "Gentle Baby Lotion", "category": "Baby Care", "price": 3200, "stock": 8, "requires_rx": false, "emoji": "🧴"},
+    {"name": "Infant Fever Drops", "category": "Baby Care", "price": 1900, "stock": 0, "requires_rx": false, "emoji": "🍼"},
+    {"name": "Adhesive Plasters", "category": "First Aid", "price": 1000, "stock": 40, "requires_rx": false, "emoji": "🩹"},
+    {"name": "Antiseptic Solution", "category": "First Aid", "price": 2300, "stock": 14, "requires_rx": false, "emoji": "🧪"},
+    {"name": "Digital Thermometer", "category": "First Aid", "price": 6500, "stock": 6, "requires_rx": false, "emoji": "🌡️"},
+    {"name": "Amoxicillin 500mg", "category": "Antibiotics", "price": 4200, "stock": 6, "requires_rx": true, "emoji": "💊"},
+    {"name": "Azithromycin 250mg", "category": "Antibiotics", "price": 5000, "stock": 5, "requires_rx": true, "emoji": "💊"},
+    {"name": "Ciprofloxacin 500mg", "category": "Antibiotics", "price": 3800, "stock": 10, "requires_rx": true, "emoji": "💊"},
+    {"name": "Hydrocortisone Cream", "category": "First Aid", "price": 2600, "stock": 11, "requires_rx": false, "emoji": "🧴"},
+    {"name": "Hand Sanitizer", "category": "First Aid", "price": 1400, "stock": 22, "requires_rx": false, "emoji": "🧼"}
+  ]
+}
